@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+  margin: 0;
+  /* font-family: Arial, sans-serif; */
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  position: relative;
+  left: 140px;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ff9900;
+  /* Change to desired hover color */
+}
+
+.search-bar {
+  display: flex;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 8px 15px;
+  background-color: #ff9900;
+  /* Change to desired button color */
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #ff6600;
+  /* Change to desired hover color */
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .nav-links.show li {
+    margin: 0;
+    text-align: center;
+  }
+
+  .nav-links.show li a {
+    padding: 10px;
+    display: block;
+  }
+
+  .search-bar {
+    display: none;
+  }
+}
+
+
+
+.ourReview {
+  text-align: center;
+  position: relative;
+  top: 20px;
+  color: #ff9900;
+  ;
+}
+
+
+
+
+.big-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  max-width: 80%;
+  margin: 0 auto;
+  height: 550px;
+  position: relative;
+  top: 40px;
+}
+
+.image-section img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.reviewer-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.review {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 700px;
+}
+
+.button-section {
+  display: flex;
+}
+
+.button-section button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-section button:hover {
+  background-color: #ff6600;
+}
+
+.next-button{
+  width: 160px;
+}
